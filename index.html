@@ -1,10 +1,259 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page | Caroline Sada</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Navbar -->
+    <section id="navbar">
+        <nav class="navbar mb-5 fixed-top navbar-expand-lg navbar-light bg-light efecto-sombra">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Caroline</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Header Section -->
+    <header class="container-fluid bg-body-tertiary">
+        <div class="row px-5 align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold text-primary">Caroline Sada</h1>
+                <p class="lead text-secondary">Transforma tus finanzas con nuestros cursos y servicios financieros personalizados.</p>
+                <a href="#contact" class="btn btn-primary btn-lg">Contacto</a>
+            </div>
+            <div class="col-lg-6 text-center d-none d-lg-block">
+                <img src="images/header-1.png" class="img-fluid" alt="Caroline Sada">
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="servicios" class="bg-white py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold text-primary mb-3">Da el primer paso hacia una vida financiera segura</h2>
+            <p class="lead text-secondary mb-5">Transforma tu futuro financiero con capacitación y asesoría personalizada.</p>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <i class="fas fa-user-check fa-3x text-mostaza mb-3"></i>
+                            <h5 class="card-title fw-bold">Acceso sin experiencia previa</h5>
+                            <p class="card-text text-secondary">No necesitas experiencia para empezar a tomar el control de tus finanzas.</p>
+                        </div>
+                        <div class="card-footer border-top-0 bg-white">
+                            <p class="text-muted">+500 personas asesoradas para alcanzar sus objetivos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <i class="fas fa-certificate fa-3x text-mostaza mb-3"></i>
+                            <h5 class="card-title fw-bold">Credenciales valiosas</h5>
+                            <p class="card-text text-secondary">Obtén certificaciones que validan tu conocimiento y habilidades financieras.</p>
+                        </div>
+                        <div class="card-footer border-top-0 bg-white">
+                            <p class="text-muted">Calificación promedio de 4.8/5 basada en la satisfacción de nuestros clientes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <i class="fas fa-clock fa-3x text-mostaza mb-3"></i>
+                            <h5 class="card-title fw-bold">A tu propio ritmo</h5>
+                            <p class="card-text text-secondary">Aprende y recibe asesoría cuando lo necesites, adaptado a tu tiempo y disponibilidad.</p>
+                        </div>
+                        <div class="card-footer border-top-0 bg-white">
+                            <p class="text-muted">Sesiones de 1 hora semanales para acompañarte en el proceso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold text-primary mb-3">Contactanos</h2>
+            <p class="lead text-secondary mb-5">Si tienes alguna duda o necesitas ayuda, no dudes en contactarnos.</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email-contact" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email-contact" name="email-contact" placeholder="tucorreo@mail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-contact" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message-contact" name="message-contact" rows="4"></textarea>
+                        </div>
+                        <button type="button" id="btn-contact" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 text-center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.809433430618!2d-78.48203105908745!3d-0.12093071025748311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMDcnMTUuNCJTIDc4wrAyOCc0OS44Ilc!5e0!3m2!1ses!2sec!4v1730933973691!5m2!1ses!2sec"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                width="100%"
+                                height="100%"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-4" style="background-color: var(--azul); color: var(--gris);">
+
+        <div class="container-fluid border-bottom border-1 border-verde pb-2 my-1">
+            <form class="row align-items-center">
+                <div class="col-lg-4 text-center">
+                    <p class="mb-0">Suscribete para estar al día con nuestras novedades</p>
+                </div>
+                <div class="col-lg-5">
+                    <label for="email-suscribete" class="visually-hidden"></label>
+                    <input type="email" class="form-control form-control-md"
+                           id="email-suscribete"
+                           name="email-suscribete"
+                           placeholder="tucorreo@mail.com">
+                    <div class="invalid-feedback">
+                        Ingresa un correo válido.
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <button type="button" id="btn-suscribete" class="btn btn-md btn-primary">¡Registrame!</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <!-- Sección de descripción -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase fw-bold" style="color: var(--dorado);">Caroline Sada</h5>
+                    <p>Aprende a gestionar tus finanzas de forma efectiva. Únete a nuestra comunidad y transforma tu futuro financiero con Caroline Sada.</p>
+                </div>
+
+                <!-- Sección de enlaces rápidos -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase fw-bold" style="color: var(--dorado);">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-decoration-none" style="color: var(--gris);">Inicio</a></li>
+                        <li><a href="#servicios" class="text-decoration-none" style="color: var(--gris);">Servicios</a></li>
+                        <li><a href="#contacto" class="text-decoration-none" style="color: var(--gris);">Contacto</a></li>
+                        <li><a href="#faq" class="text-decoration-none" style="color: var(--gris);">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sección de contacto -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase fw-bold" style="color: var(--dorado);">Contáctanos</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa-solid fa-phone-volume"></i> +593 123 456 789
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i> info@carolinesada.com
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-city"></i> Quito, Ecuador
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center mt-2 mb-1">
+                    <h6>Redes Sociales</h6>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="social-icon" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="social-icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="social-icon" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center">
+                    <small>&copy; 2024 Caroline Sada. Todos los derechos reservados.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/c17068e5a7.js" crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
+    <script>
+        const btn = document.getElementById('btn-suscribete');
+
+        btn.addEventListener('click', function (){
+            const email = document.getElementById('email-suscribete').value;
+            if (emailValidation(email)) {
+                showAlert("¡Gracias por suscribirte!", "Ahora estas al dia con nuestras novedades.", "success")
+            }else{
+                showAlert("¡UPS!", "Ingresa un correo valido.", "error");
+                document.getElementById('email-suscribete').classList.add('is-invalid');
+                document.getElementById('email-suscribete').focus()
+            }
+        })
+
+        document.getElementById('email-contact').addEventListener('blur', function (){
+            if(emailValidation($(this).value)) {
+                showAlert("¡Gracias por suscribirte!", "Ahora estas al dia con nuestras novedades.", "success")
+            } else {
+                showAlert("¡UPS!", "Ingresa un correo valido.", "error");
+            }
+        })
+
+        document.getElementById('btn-contact').addEventListener('click', function(){
+            const email = document.getElementById('email-contact').value;
+            const message = document.getElementById('message-contact').value;
+            if (emailValidation(email) && message.trim() !== '') {
+                showAlert("¡Éxito!", "Tu mensaje ha sido enviado correctamente.", "success");
+            } else {
+                showAlert("¡UPS!", "Revisar los datos ingresados.", "error");
+                document.getElementById('email-contact').classList.add('is-invalid');
+                document.getElementById('message-contact').classList.add('is-invalid');
+            }
+        })
+
+    </script>
 
 </body>
 </html>

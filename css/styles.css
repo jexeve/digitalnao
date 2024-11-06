@@ -1,0 +1,80 @@
+:root {
+    --azul: #003366;
+    --dorado: #FFD700;
+    --verde: #7FB800;
+    --gris: #F5F5F5;
+    --mostaza: #FFC107;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    font-size: 1rem !important;
+}
+
+@media (max-width: 576px) {
+    header {
+        margin-top: 70px; /* Ajusta el valor en función del tamaño de tu navbar */
+    }
+}
+
+.efecto-sombra{
+    box-shadow: 12px 5px 0px rgb(13 37 205 / 10%);
+
+}
+
+.form-control.is-invalid{
+    border-color: var(--mostaza);
+}
+
+.invalid-feedback{
+    color: var(--mostaza);
+}
+
+.navbar {
+    background-color: var(--azul) !important;
+}
+.navbar-brand, .nav-link {
+    color: var(--dorado) !important;
+}
+.navbar-brand:hover, .nav-link:hover {
+    color: var(--verde) !important;
+}
+
+.header-title {
+    color: var(--azul);;
+}
+.header-subtitle {
+    color: var(--verde);
+}
+.btn-primary {
+    background-color: var(--dorado);
+    border-color: var(--dorado);
+    color: var(--azul);
+}
+.btn-primary:hover {
+    background-color: #FFC107;
+    border-color: #FFC107;
+}
+
+.text-mostaza{
+    color: var(--mostaza);
+}
+
+textarea{
+    resize: none;
+}
+
+.border-verde{
+    border-bottom-color: var(--verde) !important;
+}
+
+.social-icon {
+    font-size: 1.2rem; /* Tamaño de los iconos */
+    color: var(--gris); /* Color de los iconos (gris claro) */
+    margin: 0 10px; /* Espacio entre los íconos */
+    transition: color 0.3s ease; /* Transición suave en el cambio de color */
+}
+
+.social-icon:hover {
+    color: var(--dorado); /* Cambia a dorado al pasar el mouse */
+}
